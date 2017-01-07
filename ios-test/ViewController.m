@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Alert.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)cadastrar:(id)sender {
+    UIAlertController *alert = [Alert withTitle:@"Sucesso!" message:@"Cadastro efetuado com sucesso!"];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 
